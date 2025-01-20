@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-17:12
+ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-20:12
+INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\haQan\.gradle\caches\8.12\transforms\135a7b5b46a62ab4a01efc9f672f7749\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\7659ccc203d97fa1a44f620d71819f20\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\haQan\.gradle\caches\8.12\transforms\a9cfdb64b0a1ebeac1b802c93ca3fdc8\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
@@ -53,9 +53,13 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\haQan\.gradle\caches\8.12\tran
 		INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:3:5-71
+	android:name
+		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:3:22-68
 application
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:3:5-16:19
-INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:3:5-16:19
+ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:5:5-19:19
+INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:5:5-19:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\haQan\.gradle\caches\8.12\transforms\135a7b5b46a62ab4a01efc9f672f7749\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\haQan\.gradle\caches\8.12\transforms\135a7b5b46a62ab4a01efc9f672f7749\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\haQan\.gradle\caches\8.12\transforms\a9cfdb64b0a1ebeac1b802c93ca3fdc8\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
@@ -77,29 +81,31 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\haQan\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\ea34bca34b3cf39a1d8337462c3bd26d\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:9:9-35
 	android:label
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:5:9-41
+		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:8:9-41
+	android:icon
+		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:7:9-40
 	android:allowBackup
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:4:9-35
+		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:7:9-67
+		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:10:9-67
 activity#com.example.voicechat.MainActivity
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:8:9-15:20
+ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:11:9-18:20
 	android:exported
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:10:13-36
+		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:13:13-36
 	android:name
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:9:13-41
+		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:12:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:11:13-14:29
+ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:14:13-17:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:12:17-69
+ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:12:25-66
+		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:13:17-77
+ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:13:27-74
+		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:16:27-74
 uses-sdk
 INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml

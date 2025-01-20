@@ -11,10 +11,14 @@ Bu Android uygulaması, ses kaydı ve paylaşımı yapabilen basit bir mesajlaş
 - [x] İlk başarılı build alındı
 
 ### v0.2 - Ses Kaydı (Yapım aşamasında)
-- [ ] Mikrofon izinleri eklendi
-- [ ] Kayıt başlat/durdur butonları eklendi
-- [ ] MediaRecorder implementasyonu yapıldı
-- [ ] Ses dosyası kaydetme özelliği eklendi
+- [x] Mikrofon izinleri eklendi
+- [x] Kayıt başlat/durdur butonları eklendi
+- [x] MediaRecorder implementasyonu yapıldı
+- [x] Ses dosyası kaydetme özelliği eklendi
+- [x] Kayıt süresi göstergesi (Chronometer) eklendi
+- [x] Kayıt durumu bildirimleri eklendi
+- [x] Kayıt dosya adı ve konumu gösterimi eklendi
+- [x] Kayıt dosyası boyutu gösterimi eklendi
 
 ### Planlanan Özellikler
 - [ ] Ses dosyalarını oynatma
