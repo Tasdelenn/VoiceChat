@@ -2,6 +2,7 @@ package com.example.voicechat
 
 import android.Manifest
 import android.content.pm.PackageManager
+import android.media.MediaPlayer
 import android.media.MediaRecorder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,10 +19,13 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
     private var mediaRecorder: MediaRecorder? = null
+    private var mediaPlayer: MediaPlayer? = null
     private var isRecording = false
+    private var isPlaying = false
     private val PERMISSION_REQUEST_CODE = 123
     private lateinit var chronometer: Chronometer
     private lateinit var statusText: TextView
+    private lateinit var playButton: Button
     private var outputFile: File? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         chronometer = findViewById(R.id.chronometer)
         statusText = findViewById(R.id.statusText)
+        playButton = findViewById(R.id.playButton)
         val recordButton = findViewById<Button>(R.id.recordButton)
 
         recordButton.setOnClickListener {
@@ -42,6 +47,57 @@ class MainActivity : AppCompatActivity() {
             } else {
                 requestPermission()
             }
+        }
+
+        playButton.setOnClickListener {
+            if (!isPlaying) {
+                startPlaying()
+            } else {
+                stopPlaying()
+            }
+        }
+    }
+
+    private fun startPlaying() {
+        outputFile?.let { file ->
+            try {
+                mediaPlayer = MediaPlayer().apply {
+                    setDataSource(file.absolutePath)
+                    prepare()
+                    start()
+                }
+                isPlaying = true
+                playButton.text = "Durdur"
+                statusText.text = "Ses oynatılıyor: ${file.name}"
+
+                // Oynatma bittiğinde
+                mediaPlayer?.setOnCompletionListener {
+                    stopPlaying()
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+                Toast.makeText(this@MainActivity, "Oynatma başlatılamadı", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    private fun stopPlaying() {
+        mediaPlayer?.apply {
+            try {
+                if (isPlaying) {
+                    stop()
+                }
+                reset()
+                release()
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
+        mediaPlayer = null
+        isPlaying = false
+        playButton.text = "Oynat"
+        outputFile?.let {
+            statusText.text = "Son kayıt: ${it.name}\nBoyut: ${it.length() / 1024}KB"
         }
     }
 
@@ -61,7 +117,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startRecording() {
-        // Benzersiz bir dosya adı oluştur
+        // Eğer oynatma devam ediyorsa durdur
+        if (isPlaying) {
+            stopPlaying()
+        }
+
         val timestamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Date())
         outputFile = File(externalCacheDir, "VOICE_${timestamp}.mp3")
 
@@ -77,6 +137,7 @@ class MainActivity : AppCompatActivity() {
                 
                 // UI güncellemeleri
                 findViewById<Button>(R.id.recordButton).text = "Kaydı Durdur"
+                playButton.isEnabled = false
                 chronometer.base = SystemClock.elapsedRealtime()
                 chronometer.visibility = android.view.View.VISIBLE
                 chronometer.start()
@@ -105,13 +166,13 @@ class MainActivity : AppCompatActivity() {
 
         // UI güncellemeleri
         findViewById<Button>(R.id.recordButton).text = "Kayıt Başlat"
+        playButton.isEnabled = true
         chronometer.stop()
         chronometer.visibility = android.view.View.INVISIBLE
         
-        // Kayıt bilgisini göster
         outputFile?.let {
             val fileSize = it.length() / 1024 // KB cinsinden
-            statusText.text = "Son kayıt: ${it.name}\nBoyut: ${fileSize}KB\nKonum: ${it.absolutePath}"
+            statusText.text = "Son kayıt: ${it.name}\nBoyut: ${fileSize}KB"
         }
         
         Toast.makeText(this, "Kayıt durduruldu", Toast.LENGTH_SHORT).show()
@@ -130,5 +191,13 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "İzin reddedildi", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mediaRecorder?.release()
+        mediaRecorder = null
+        mediaPlayer?.release()
+        mediaPlayer = null
     }
 } 

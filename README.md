@@ -20,6 +20,12 @@ Bu Android uygulaması, ses kaydı ve paylaşımı yapabilen basit bir mesajlaş
 - [x] Kayıt dosya adı ve konumu gösterimi eklendi
 - [x] Kayıt dosyası boyutu gösterimi eklendi
 
+### v0.2.2 - Ses Oynatma Özelliği
+- [x] Ses oynatma butonu eklendi
+- [x] MediaPlayer implementasyonu yapıldı
+- [x] Oynatma durumu göstergesi eklendi
+- [x] Kayıt/oynatma geçişleri iyileştirildi
+
 ### Planlanan Özellikler
 - [ ] Ses dosyalarını oynatma
 - [ ] Ses dosyalarını paylaşma

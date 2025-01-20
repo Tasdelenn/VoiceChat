@@ -4,6 +4,7 @@ color ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mic
 id chronometer
+id playButton
 id recordButton
 id statusText
 layout activity_main
