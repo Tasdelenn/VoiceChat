@@ -1,0 +1,180 @@
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:39: Warning: A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.15.0 [GradleDependency]
+    implementation("androidx.core:core-ktx:1.12.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:40: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0 [GradleDependency]
+    implementation("androidx.appcompat:appcompat:1.6.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:41: Warning: A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0 [GradleDependency]
+    implementation("com.google.android.material:material:1.11.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:43: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:44: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:54: Warning: A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-test than 1.7.1 is available: 1.7.3 [GradleDependency]
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:23: Warning: Expecting android:screenOrientation="unspecified" or "fullSensor" for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices [LockedOrientationActivity]
+            android:screenOrientation="portrait">
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "LockedOrientationActivity":
+   The <activity> element should not be locked to any orientation so that
+   users can take advantage of the multi-window environments and larger
+   screens available on Android. To fix the issue, consider declaring the
+   corresponding activity element with `screenOrientation="unspecified"or
+   "fullSensor"` attribute.
+
+   https://developer.android.com/topic/arc/window-management
+
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\arrays.xml:35: Warning: The resource R.array.noise_suppression_levels appears to be unused [UnusedResources]
+    <string-array name="noise_suppression_levels">
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\arrays.xml:42: Warning: The resource R.array.noise_suppression_levels_values appears to be unused [UnusedResources]
+    <string-array name="noise_suppression_levels_values">
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\colors.xml:6: Warning: The resource R.color.primary_light appears to be unused [UnusedResources]
+    <color name="primary_light">#BBDEFB</color>
+           ~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\colors.xml:12: Warning: The resource R.color.text_disabled appears to be unused [UnusedResources]
+    <color name="text_disabled">#9E9E9E</color>
+           ~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\colors.xml:16: Warning: The resource R.color.button_disabled appears to be unused [UnusedResources]
+    <color name="button_disabled">#BDBDBD</color>
+           ~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\colors.xml:17: Warning: The resource R.color.button_pressed appears to be unused [UnusedResources]
+    <color name="button_pressed">#1976D2</color>
+           ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\colors.xml:20: Warning: The resource R.color.status_recording appears to be unused [UnusedResources]
+    <color name="status_recording">#F44336</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\colors.xml:21: Warning: The resource R.color.status_playing appears to be unused [UnusedResources]
+    <color name="status_playing">#4CAF50</color>
+           ~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\colors.xml:22: Warning: The resource R.color.status_idle appears to be unused [UnusedResources]
+    <color name="status_idle">#757575</color>
+           ~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\colors.xml:25: Warning: The resource R.color.background appears to be unused [UnusedResources]
+    <color name="background">#FFFFFF</color>
+           ~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\colors.xml:26: Warning: The resource R.color.background_secondary appears to be unused [UnusedResources]
+    <color name="background_secondary">#F5F5F5</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\dimens.xml:4: Warning: The resource R.dimen.margin_small appears to be unused [UnusedResources]
+    <dimen name="margin_small">8dp</dimen>
+           ~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\drawable\ic_mic.xml:2: Warning: The resource R.drawable.ic_mic appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\strings.xml:19: Warning: The resource R.string.recording_stop_failed appears to be unused [UnusedResources]
+    <string name="recording_stop_failed">Kayıt durdurulamadı</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\strings.xml:21: Warning: The resource R.string.playback_stop_failed appears to be unused [UnusedResources]
+    <string name="playback_stop_failed">Oynatma durdurulamadı</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\themes.xml:36: Warning: The resource R.style.Widget_VoiceChat_Button_Recording appears to be unused [UnusedResources]
+    <style name="Widget.VoiceChat.Button.Recording">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\values\themes.xml:41: Warning: The resource R.style.Widget_VoiceChat_Button_Playing appears to be unused [UnusedResources]
+    <style name="Widget.VoiceChat.Button.Playing">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml:2: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml:2: Warning: The application adaptive roundIcon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   If android:roundIcon and android:icon are both in your manifest, you must
+   either remove the reference to android:roundIcon if it is not needed; or,
+   supply the monochrome icon in the drawable defined by the android:roundIcon
+   and android:icon attribute.
+
+   For example, if android:roundIcon and android:icon are both in the
+   manifest, a launcher might choose to use android:roundIcon over
+   android:icon to display the adaptive app icon. Therefore, your themed
+   application iconwill not show if your monochrome attribute is not also
+   specified in android:roundIcon.
+
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:39: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.core:core-ktx:1.12.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:40: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.appcompat:appcompat:1.6.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:41: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("com.google.android.material:material:1.11.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:42: Warning: Use version catalog instead [UseTomlInstead]
+    testImplementation("junit:junit:4.13.2")
+                        ~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:43: Warning: Use version catalog instead [UseTomlInstead]
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:44: Warning: Use version catalog instead [UseTomlInstead]
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:47: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.preference:preference-ktx:1.2.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:50: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.media:media:1.7.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:53: Warning: Use version catalog instead [UseTomlInstead]
+    testImplementation("org.mockito:mockito-core:5.3.1")
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\haQan\Documents\VoiceChat\app\build.gradle.kts:54: Warning: Use version catalog instead [UseTomlInstead]
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseTomlInstead":
+   If your project is using a libs.versions.toml file, you should place all
+   Gradle dependencies in the TOML file. This lint check looks for version
+   declarations outside of the TOML file and suggests moving them (and in the
+   IDE, provides a quickfix to performing the operation automatically).
+
+C:\Users\haQan\Documents\VoiceChat\app\src\main\res\layout\activity_main.xml:55: Warning: Hardcoded string "Stream Başlat", should use @string resource [HardcodedText]
+            android:text="Stream Başlat"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 37 warnings

@@ -1,5 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="ic_launcher_background">#FFFFFF</color>
-    <string name="app_name">VoiceChat</string>
+    <string-array name="bit_depth">
+        <item>8 bit</item>
+        <item>16 bit</item>
+        <item>24 bit</item>
+        <item>32 bit</item>
+    </string-array>
+    <string-array name="bit_depth_values">
+        <item>8</item>
+        <item>16</item>
+        <item>24</item>
+        <item>32</item>
+    </string-array>
+    <string-array name="noise_suppression_levels">
+        <item>Düşük</item>
+        <item>Orta</item>
+        <item>Yüksek</item>
+        <item>Çok Yüksek</item>
+    </string-array>
+    <string-array name="noise_suppression_levels_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="sample_rates">
+        <item>8000 Hz</item>
+        <item>16000 Hz</item>
+        <item>22050 Hz</item>
+        <item>44100 Hz</item>
+        <item>48000 Hz</item>
+    </string-array>
+    <string-array name="sample_rates_values">
+        <item>8000</item>
+        <item>16000</item>
+        <item>22050</item>
+        <item>44100</item>
+        <item>48000</item>
+    </string-array>
+    <color name="accent">#FF4081</color>
+    <color name="background">#FFFFFF</color>
+    <color name="background_secondary">#F5F5F5</color>
+    <color name="black">#000000</color>
+    <color name="button_disabled">#BDBDBD</color>
+    <color name="button_enabled">#2196F3</color>
+    <color name="button_pressed">#1976D2</color>
+    <color name="ic_launcher_background">#2196F3</color>
+    <color name="primary">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="status_idle">#757575</color>
+    <color name="status_playing">#4CAF50</color>
+    <color name="status_recording">#F44336</color>
+    <color name="text_disabled">#9E9E9E</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="button_min_width">120dp</dimen>
+    <dimen name="chronometer_text_size">24sp</dimen>
+    <dimen name="content_padding">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="status_text_size">16sp</dimen>
+    <string name="action_settings">Ayarlar</string>
+    <string name="app_name">Voice Chat</string>
+    <string name="category_audio_enhancement">Ses İyileştirme</string>
+    <string name="category_audio_quality">Ses Kalitesi</string>
+    <string name="last_recording">Son kayıt: %1$s\nBoyut: %2$dKB</string>
+    <string name="permission_denied">İzin reddedildi</string>
+    <string name="permission_granted">İzin verildi</string>
+    <string name="playback_start_failed">Oynatma başlatılamadı</string>
+    <string name="playback_stop_failed">Oynatma durdurulamadı</string>
+    <string name="playing_in_progress">Kayıt oynatılıyor…</string>
+    <string name="recording_in_progress">Kayıt yapılıyor…</string>
+    <string name="recording_start_failed">Kayıt başlatılamadı</string>
+    <string name="recording_stop_failed">Kayıt durdurulamadı</string>
+    <string name="recording_stopped">Kayıt durduruldu</string>
+    <string name="settings_updated">Ayarlar güncellendi</string>
+    <string name="start_playing">Oynat</string>
+    <string name="start_recording">Kayıt Başlat</string>
+    <string name="stop_playing">Durdur</string>
+    <string name="stop_recording">Kaydı Durdur</string>
+    <string name="summary_auto_gain">Ses seviyesini otomatik ayarlar</string>
+    <string name="summary_bit_depth">Ses bit derinliğini seçin</string>
+    <string name="summary_echo_cancellation">Hoparlör-mikrofon arasındaki eko etkisini azaltır</string>
+    <string name="summary_noise_suppression">Arka plan gürültüsünü azaltır</string>
+    <string name="summary_sample_rate">Ses örnekleme hızını seçin</string>
+    <string name="title_auto_gain">Otomatik Kazanç Kontrolü</string>
+    <string name="title_bit_depth">Bit Derinliği</string>
+    <string name="title_echo_cancellation">Akustik Eko Engelleme (AEC)</string>
+    <string name="title_noise_suppression">Gürültü Bastırma</string>
+    <string name="title_sample_rate">Örnekleme Hızı</string>
+    <style name="ActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_normal</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="Chronometer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/chronometer_text_size</item>
+        <item name="android:layout_marginBottom">@dimen/margin_normal</item>
+    </style>
+    <style name="StatusText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/status_text_size</item>
+    </style>
+    <style name="Theme.VoiceChat" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+        
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        
+        
+        <item name="materialButtonStyle">@style/Widget.VoiceChat.Button</item>
+    </style>
+    <style name="Widget.VoiceChat.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/button_enabled</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:padding">@dimen/margin_normal</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+    <style name="Widget.VoiceChat.Button.Playing">
+        <item name="backgroundTint">@color/status_playing</item>
+    </style>
+    <style name="Widget.VoiceChat.Button.Recording">
+        <item name="backgroundTint">@color/status_recording</item>
+    </style>
 </resources>

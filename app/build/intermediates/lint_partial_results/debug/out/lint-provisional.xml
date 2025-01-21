@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.2.0" type="conditional_incidents">
+
+    <incident
+        id="ScopedStorage"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="6"
+            column="36"
+            startOffset="272"
+            endLine="6"
+            endColumn="77"
+            endOffset="313"/>
+        <map>
+            <entry
+                name="maxSdkVersion"
+                int="28"/>
+            <entry
+                name="read"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 31">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement="">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+                startOffset="765"
+                endOffset="785"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="18"
+            column="9"
+            startOffset="765"
+            endLine="18"
+            endColumn="29"
+            endOffset="785"/>
+        <map>
+            <condition minGE="ffffffffc0000000"/>
+        </map>
+    </incident>
+
+    <incident
+        id="LockedOrientationActivity"
+        severity="warning"
+        message="Expecting `android:screenOrientation=&quot;unspecified&quot;` or `&quot;fullSensor&quot;` for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices">
+        <fix-attribute
+            description="Set screenOrientation=&quot;fullSensor&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="screenOrientation"
+            value="fullSensor"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="23"
+            column="13"
+            startOffset="908"
+            endLine="23"
+            endColumn="49"
+            endOffset="944"/>
+        <map>
+            <condition library="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_launcher_foreground.xml"
+            line="13"
+            column="32"
+            startOffset="443"
+            endLine="13"
+            endColumn="52"
+            endOffset="463"/>
+        <map>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_launcher_foreground.xml"
+            line="16"
+            column="32"
+            startOffset="635"
+            endLine="16"
+            endColumn="52"
+            endOffset="655"/>
+        <map>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+        </map>
+    </incident>
+
+</incidents>

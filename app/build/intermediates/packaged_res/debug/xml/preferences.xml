@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <PreferenceCategory
+        android:title="@string/category_audio_quality"
+        app:iconSpaceReserved="false">
+        
+        <ListPreference
+            android:key="sample_rate"
+            android:title="@string/title_sample_rate"
+            android:summary="@string/summary_sample_rate"
+            android:entries="@array/sample_rates"
+            android:entryValues="@array/sample_rates_values"
+            android:defaultValue="44100"
+            app:iconSpaceReserved="false"
+            android:dialogTitle="@string/title_sample_rate"
+            app:useSimpleSummaryProvider="true"
+            android:positiveButtonText="@android:string/ok"
+            android:negativeButtonText="@android:string/cancel"
+            app:buttonTint="@color/primary" />
+
+        <ListPreference
+            android:key="bit_depth"
+            android:title="@string/title_bit_depth"
+            android:summary="@string/summary_bit_depth"
+            android:entries="@array/bit_depth"
+            android:entryValues="@array/bit_depth_values"
+            android:defaultValue="16"
+            app:iconSpaceReserved="false"
+            android:dialogTitle="@string/title_bit_depth"
+            app:useSimpleSummaryProvider="true"
+            android:positiveButtonText="@android:string/ok"
+            android:negativeButtonText="@android:string/cancel"
+            app:buttonTint="@color/primary" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_audio_enhancement"
+        app:iconSpaceReserved="false">
+        
+        <SwitchPreferenceCompat
+            android:key="acoustic_echo_cancellation"
+            android:title="@string/title_echo_cancellation"
+            android:summary="@string/summary_echo_cancellation"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:buttonTint="@color/primary" />
+
+        <SwitchPreferenceCompat
+            android:key="noise_suppression"
+            android:title="@string/title_noise_suppression"
+            android:summary="@string/summary_noise_suppression"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:buttonTint="@color/primary" />
+
+        <SwitchPreferenceCompat
+            android:key="auto_gain_control"
+            android:title="@string/title_auto_gain"
+            android:summary="@string/summary_auto_gain"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false"
+            app:buttonTint="@color/primary" />
+    </PreferenceCategory>
+</PreferenceScreen> 

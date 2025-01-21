@@ -26,6 +26,21 @@ Bu Android uygulaması, ses kaydı ve paylaşımı yapabilen basit bir mesajlaş
 - [x] Oynatma durumu göstergesi eklendi
 - [x] Kayıt/oynatma geçişleri iyileştirildi
 
+### v0.3.0 - Gelişmiş Ses Özellikleri
+- [x] Ses kalitesi ayarları eklendi
+  - Örnekleme hızı seçimi
+  - Bit derinliği seçimi
+- [x] Ses iyileştirme özellikleri eklendi
+  - Akustik Eko Engelleme (AEC)
+  - Gürültü Bastırma
+  - Otomatik Kazanç Kontrolü
+  - Gürültü Bastırma Seviyesi ayarı
+
+### v0.3.1 - Ses Görselleştirme
+- [x] Gerçek zamanlı ses dalga formu görselleştirmesi eklendi
+- [x] 20fps yenileme hızı ile düşük gecikme
+- [x] Normalize edilmiş amplitüd gösterimi
+
 ### Planlanan Özellikler
 - [ ] Ses dosyalarını oynatma
 - [ ] Ses dosyalarını paylaşma

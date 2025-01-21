@@ -4,47 +4,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Chronometer
-        android:id="@+id/chronometer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/recordButton"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:id="@+id/settings_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <Button
-        android:id="@+id/recordButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kayıt Başlat"
-        app:layout_constraintBottom_toTopOf="@+id/playButton"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chronometer" />
-
-    <Button
-        android:id="@+id/playButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Oynat"
-        android:enabled="false"
-        app:layout_constraintBottom_toTopOf="@+id/statusText"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recordButton" />
-
-    <TextView
-        android:id="@+id/statusText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text=""
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:gravity="center"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+        android:padding="@dimen/content_padding">
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            style="@style/Chronometer"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/recordButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/recordButton"
+            style="@style/ActionButton"
+            android:text="@string/start_recording"
+            app:layout_constraintBottom_toTopOf="@+id/playButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chronometer" />
+
+        <Button
+            android:id="@+id/playButton"
+            style="@style/ActionButton"
+            android:text="@string/start_playing"
+            android:enabled="false"
+            app:layout_constraintBottom_toTopOf="@+id/statusText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recordButton" />
+
+        <Button
+            android:id="@+id/streamButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stream Başlat"
+            android:enabled="false"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/playButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/statusText"
+            style="@style/StatusText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playButton" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout> 

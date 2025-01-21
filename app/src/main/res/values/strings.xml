@@ -1,3 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">VoiceChat</string>
+    <string name="app_name">Voice Chat</string>
+    
+    <!-- Button Labels -->
+    <string name="start_recording">Kayıt Başlat</string>
+    <string name="stop_recording">Kaydı Durdur</string>
+    <string name="start_playing">Oynat</string>
+    <string name="stop_playing">Durdur</string>
+    
+    <!-- Status Messages -->
+    <string name="recording_in_progress">Kayıt yapılıyor…</string>
+    <string name="recording_stopped">Kayıt durduruldu</string>
+    <string name="playing_in_progress">Kayıt oynatılıyor…</string>
+    <string name="last_recording">Son kayıt: %1$s\nBoyut: %2$dKB</string>
+    
+    <!-- Toast Messages -->
+    <string name="recording_start_failed">Kayıt başlatılamadı</string>
+    <string name="recording_stop_failed">Kayıt durdurulamadı</string>
+    <string name="playback_start_failed">Oynatma başlatılamadı</string>
+    <string name="playback_stop_failed">Oynatma durdurulamadı</string>
+    <string name="permission_granted">İzin verildi</string>
+    <string name="permission_denied">İzin reddedildi</string>
+    <string name="settings_updated">Ayarlar güncellendi</string>
+    
+    <!-- Menu Items -->
+    <string name="action_settings">Ayarlar</string>
+    
+    <!-- Settings Categories -->
+    <string name="category_audio_quality">Ses Kalitesi</string>
+    <string name="category_audio_enhancement">Ses İyileştirme</string>
+    
+    <!-- Settings Titles -->
+    <string name="title_sample_rate">Örnekleme Hızı</string>
+    <string name="title_bit_depth">Bit Derinliği</string>
+    <string name="title_echo_cancellation">Akustik Eko Engelleme (AEC)</string>
+    <string name="title_noise_suppression">Gürültü Bastırma</string>
+    <string name="title_auto_gain">Otomatik Kazanç Kontrolü</string>
+    
+    <!-- Settings Summaries -->
+    <string name="summary_sample_rate">Ses örnekleme hızını seçin</string>
+    <string name="summary_bit_depth">Ses bit derinliğini seçin</string>
+    <string name="summary_echo_cancellation">Hoparlör-mikrofon arasındaki eko etkisini azaltır</string>
+    <string name="summary_noise_suppression">Arka plan gürültüsünü azaltır</string>
+    <string name="summary_auto_gain">Ses seviyesini otomatik ayarlar</string>
 </resources> 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Örnekleme Hızı Seçenekleri -->
+    <string-array name="sample_rates">
+        <item>8000 Hz</item>
+        <item>16000 Hz</item>
+        <item>22050 Hz</item>
+        <item>44100 Hz</item>
+        <item>48000 Hz</item>
+    </string-array>
+
+    <string-array name="sample_rates_values">
+        <item>8000</item>
+        <item>16000</item>
+        <item>22050</item>
+        <item>44100</item>
+        <item>48000</item>
+    </string-array>
+
+    <!-- Bit Derinliği Seçenekleri -->
+    <string-array name="bit_depth">
+        <item>8 bit</item>
+        <item>16 bit</item>
+        <item>24 bit</item>
+        <item>32 bit</item>
+    </string-array>
+
+    <string-array name="bit_depth_values">
+        <item>8</item>
+        <item>16</item>
+        <item>24</item>
+        <item>32</item>
+    </string-array>
+
+    <string-array name="noise_suppression_levels">
+        <item>Düşük</item>
+        <item>Orta</item>
+        <item>Yüksek</item>
+        <item>Çok Yüksek</item>
+    </string-array>
+
+    <string-array name="noise_suppression_levels_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources> 
