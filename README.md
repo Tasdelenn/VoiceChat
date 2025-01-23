@@ -41,6 +41,9 @@ Bu Android uygulaması, ses kaydı ve paylaşımı yapabilen basit bir mesajlaş
 - [x] 20fps yenileme hızı ile düşük gecikme
 - [x] Normalize edilmiş amplitüd gösterimi
 
+### v0.4 - WebRTC Entegrasyonu
+- [x] WebRTC kütüphanesi projeye eklendi
+
 ### Planlanan Özellikler
 - [ ] Ses dosyalarını oynatma
 - [ ] Ses dosyalarını paylaşma
@@ -87,3 +90,5 @@ src : ...VoiceChat\app\build\outputs\apk\debug\app-debug.apk
 ## Lisans
 
 [MIT License](LICENSE)
+
+- [x] Mikrofon ve internet izinleri tanımlandı

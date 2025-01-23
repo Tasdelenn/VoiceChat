@@ -52,4 +52,7 @@ dependencies {
     // Test bağımlılıkları
     testImplementation("org.mockito:mockito-core:5.3.1")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
+
+    // WebRTC kütüphanesi
+    implementation("org.webrtc:google-webrtc:1.0.32006")
 }
