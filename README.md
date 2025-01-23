@@ -10,7 +10,7 @@ Bu Android uygulaması, ses kaydı ve paylaşımı yapabilen basit bir mesajlaş
 - [x] Temel Activity ve layout dosyaları eklendi
 - [x] İlk başarılı build alındı
 
-### v0.2 - Ses Kaydı (Yapım aşamasında)
+### v0.2 - Ses Kaydı 
 - [x] Mikrofon izinleri eklendi
 - [x] Kayıt başlat/durdur butonları eklendi
 - [x] MediaRecorder implementasyonu yapıldı
@@ -90,5 +90,3 @@ src : ...VoiceChat\app\build\outputs\apk\debug\app-debug.apk
 ## Lisans
 
 [MIT License](LICENSE)
-
-- [x] Mikrofon ve internet izinleri tanımlandı
