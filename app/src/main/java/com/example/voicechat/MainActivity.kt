@@ -30,11 +30,14 @@ class MainActivity : AppCompatActivity() {
     private lateinit var statusText: TextView
     private lateinit var playButton: Button
     private lateinit var recordButton: Button
+    private lateinit var streamButton: Button
+    private lateinit var streamInfoText: TextView
     
     // State
     private var isRecording = false
     private var isPlaying = false
     private var outputFile: File? = null
+    private var isStreaming = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,6 +58,8 @@ class MainActivity : AppCompatActivity() {
         statusText = findViewById(R.id.statusText)
         playButton = findViewById(R.id.playButton)
         recordButton = findViewById(R.id.recordButton)
+        streamButton = findViewById(R.id.streamButton)
+        streamInfoText = findViewById(R.id.streamInfoText)
     }
 
     private fun setupClickListeners() {
@@ -68,6 +73,14 @@ class MainActivity : AppCompatActivity() {
 
         playButton.setOnClickListener {
             handlePlayButtonClick()
+        }
+
+        streamButton.setOnClickListener {
+            if (!isStreaming) {
+                startStreaming()
+            } else {
+                stopStreaming()
+            }
         }
     }
 
@@ -266,5 +279,20 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         )
+    }
+
+    private fun startStreaming() {
+        isStreaming = true
+        streamButton.text = getString(R.string.stop_stream)
+        val ip = "192.168.1.100" // Örnek IP adresi
+        val port = "8080" // Örnek port
+        val startTime = SystemClock.elapsedRealtime()
+        streamInfoText.text = "IP: $ip\nPort: $port\nSüre: ${SystemClock.elapsedRealtime() - startTime} ms"
+    }
+
+    private fun stopStreaming() {
+        isStreaming = false
+        streamButton.text = getString(R.string.start_stream)
+        streamInfoText.text = ""
     }
 } 

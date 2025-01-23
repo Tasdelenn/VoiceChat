@@ -3510,6 +3510,7 @@ id statusText
 id status_bar_latest_event_content
 id stop
 id streamButton
+id streamInfoText
 id stretch
 id submenuarrow
 id submit_area
@@ -3990,9 +3991,11 @@ string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string start_playing
 string start_recording
+string start_stream
 string status_bar_notification_info_overflow
 string stop_playing
 string stop_recording
+string stop_stream
 string summary_auto_gain
 string summary_bit_depth
 string summary_collapsed_preference_list

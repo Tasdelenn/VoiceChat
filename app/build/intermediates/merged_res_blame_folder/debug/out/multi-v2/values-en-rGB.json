@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.voicechat.app-mergeDebugResources-39:/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "com.example.voicechat.app-mergeDebugResources-40:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "C:\\Users\\haQan\\.gradle\\caches\\8.12\\transforms\\135a7b5b46a62ab4a01efc9f672f7749\\transformed\\material-1.11.0\\res\\values-en-rGB\\values-en-rGB.xml",

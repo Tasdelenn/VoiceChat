@@ -2141,9 +2141,11 @@
     <string name="side_sheet_behavior" translatable="false">com.google.android.material.sidesheet.SideSheetBehavior</string>
     <string name="start_playing">Oynat</string>
     <string name="start_recording">Kayıt Başlat</string>
+    <string name="start_stream">Stream Başlat</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="stop_playing">Durdur</string>
     <string name="stop_recording">Kaydı Durdur</string>
+    <string name="stop_stream">Stream Durdur</string>
     <string name="summary_auto_gain">Ses seviyesini otomatik ayarlar</string>
     <string name="summary_bit_depth">Ses bit derinliğini seçin</string>
     <string name="summary_collapsed_preference_list"><ns2:g id="current_items">%1$s</ns2:g>, <ns2:g id="added_items">%2$s</ns2:g></string>

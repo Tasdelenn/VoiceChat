@@ -1,6 +1,6 @@
 <lint-module
     format="1"
-    dir="C:\Users\haQan\Documents\VoiceChat\app"
+    dir="C:\Users\haQan\Documents\VoiceChat\VoiceChat\app"
     name=":app"
     type="APP"
     maven="VoiceChat:app:"

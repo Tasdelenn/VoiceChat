@@ -12,6 +12,7 @@
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <permission
         android:name="com.example.voicechat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"

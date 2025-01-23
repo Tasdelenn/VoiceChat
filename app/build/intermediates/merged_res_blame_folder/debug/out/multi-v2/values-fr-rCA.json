@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.voicechat.app-mergeDebugResources-39:/values-fr-rCA/values-fr-rCA.xml",
+            "outputFile": "com.example.voicechat.app-mergeDebugResources-40:/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
                     "source": "C:\\Users\\haQan\\.gradle\\caches\\8.12\\transforms\\19dea5406c369cf97f190d0f24d4061c\\transformed\\preference-1.2.1\\res\\values-fr-rCA\\values-fr-rCA.xml",

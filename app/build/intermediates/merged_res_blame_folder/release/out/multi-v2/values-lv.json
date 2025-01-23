@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.voicechat.app-mergeReleaseResources-39:/values-lv/values-lv.xml",
+            "outputFile": "com.example.voicechat.app-mergeReleaseResources-40:/values-lv/values-lv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\haQan\\.gradle\\caches\\8.12\\transforms\\ea34bca34b3cf39a1d8337462c3bd26d\\transformed\\core-1.12.0\\res\\values-lv\\values-lv.xml",

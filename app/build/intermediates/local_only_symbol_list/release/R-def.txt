@@ -41,6 +41,7 @@ id recordButton
 id settings_container
 id statusText
 id streamButton
+id streamInfoText
 layout activity_main
 menu main_menu
 mipmap ic_launcher
@@ -62,8 +63,10 @@ string recording_stopped
 string settings_updated
 string start_playing
 string start_recording
+string start_stream
 string stop_playing
 string stop_recording
+string stop_stream
 string summary_auto_gain
 string summary_bit_depth
 string summary_echo_cancellation

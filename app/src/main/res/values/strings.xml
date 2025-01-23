@@ -7,6 +7,8 @@
     <string name="stop_recording">Kaydı Durdur</string>
     <string name="start_playing">Oynat</string>
     <string name="stop_playing">Durdur</string>
+    <string name="start_stream">Stream Başlat</string>
+    <string name="stop_stream">Stream Durdur</string>
     
     <!-- Status Messages -->
     <string name="recording_in_progress">Kayıt yapılıyor…</string>

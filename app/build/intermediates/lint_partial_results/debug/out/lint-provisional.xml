@@ -32,17 +32,17 @@
             replacement="">
             <range
                 file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
-                startOffset="765"
-                endOffset="785"/>
+                startOffset="833"
+                endOffset="853"/>
         </fix-replace>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
-            line="18"
+            line="19"
             column="9"
-            startOffset="765"
-            endLine="18"
+            startOffset="833"
+            endLine="19"
             endColumn="29"
-            endOffset="785"/>
+            endOffset="853"/>
         <map>
             <condition minGE="ffffffffc0000000"/>
         </map>
@@ -61,12 +61,12 @@
             value="fullSensor"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
-            line="23"
+            line="24"
             column="13"
-            startOffset="908"
-            endLine="23"
+            startOffset="976"
+            endLine="24"
             endColumn="49"
-            endOffset="944"/>
+            endOffset="1012"/>
         <map>
             <condition library="false"/>
         </map>

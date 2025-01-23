@@ -177,21 +177,22 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 37 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 50 warnings</span>
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Tue Jan 21 09:27:03 TRT 2025 by AGP (8.2.0)</nav>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Thu Jan 23 19:27:59 TRT 2025 by AGP (8.2.0)</nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Issue Types</span>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="#overview"><i class="material-icons">dashboard</i>Overview</a>
-      <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (6)</a>
+      <a class="mdl-navigation__link" href="#OldTargetApi"><i class="material-icons warning-icon">warning</i>Target SDK attribute is not targeting latest version (1)</a>
+      <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (8)</a>
       <a class="mdl-navigation__link" href="#LockedOrientationActivity"><i class="material-icons warning-icon">warning</i>Incompatible screenOrientation value (1)</a>
       <a class="mdl-navigation__link" href="#UnusedResources"><i class="material-icons warning-icon">warning</i>Unused resources (17)</a>
       <a class="mdl-navigation__link" href="#MonochromeLauncherIcon"><i class="material-icons warning-icon">warning</i>Monochrome icon is not defined (2)</a>
-      <a class="mdl-navigation__link" href="#UseTomlInstead"><i class="material-icons warning-icon">warning</i>Use TOML Version Catalog Instead (10)</a>
-      <a class="mdl-navigation__link" href="#HardcodedText"><i class="material-icons warning-icon">warning</i>Hardcoded text (1)</a>
+      <a class="mdl-navigation__link" href="#UseTomlInstead"><i class="material-icons warning-icon">warning</i>Use TOML Version Catalog Instead (16)</a>
+      <a class="mdl-navigation__link" href="#SetTextI18n"><i class="material-icons warning-icon">warning</i>TextView Internationalization (5)</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -207,7 +208,10 @@ document.getElementById(id).style.display = 'none';
 <tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
 </td></tr>
 <tr>
-<td class="countColumn">6</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#OldTargetApi">OldTargetApi</a>: Target SDK attribute is not targeting latest version</td></tr>
+<tr>
+<td class="countColumn">8</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#GradleDependency">GradleDependency</a>: Obsolete Gradle Dependency</td></tr>
 <tr>
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
@@ -225,13 +229,13 @@ document.getElementById(id).style.display = 'none';
 <tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Productivity">Productivity</a>
 </td></tr>
 <tr>
-<td class="countColumn">10</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<td class="countColumn">16</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#UseTomlInstead">UseTomlInstead</a>: Use TOML Version Catalog Instead</td></tr>
 <tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Internationalization">Internationalization</a>
 </td></tr>
 <tr>
-<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
-<a href="#HardcodedText">HardcodedText</a>: Hardcoded text</td></tr>
+<td class="countColumn">5</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
+<a href="#SetTextI18n">SetTextI18n</a>: TextView Internationalization</td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#ExtraIssues">Included Additional Checks (23)</a>
 </td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (39)</a>
@@ -244,7 +248,57 @@ Dismiss</button>            </div>
             </div>
           </section>
 <a name="Correctness"></a>
-<a name="GradleDependency"></a>
+<a name="OldTargetApi"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="OldTargetApiCard" style="display: block;">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Target SDK attribute is not targeting latest version</h2>
+  </div>
+              <div class="mdl-card__supporting-text">
+<div class="issue">
+<div class="warningslist">
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:13</span>: <span class="message">Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.</span><br /><pre class="errorlines">
+<span class="lineno"> 10 </span>    defaultConfig {
+<span class="lineno"> 11 </span>        applicationId = "com.example.voicechat"
+<span class="lineno"> 12 </span>        minSdk = 24
+<span class="caretline"><span class="lineno"> 13 </span>        <span class="warning">targetSdk = 34</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 14 </span>        versionCode = 1
+<span class="lineno"> 15 </span>        versionName = "1.0"
+</pre>
+
+</div>
+<div class="metadata"><div class="explanation" id="explanationOldTargetApi" style="display: none;">
+When your application runs on a version of Android that is more recent than your <code>targetSdkVersion</code> specifies that it has been tested with, various compatibility modes kick in. This ensures that your application continues to work, but it may look out of place. For example, if the <code>targetSdkVersion</code> is less than 14, your app may get an option button in the UI.<br/>
+<br/>
+To fix this issue, set the <code>targetSdkVersion</code> to the highest available value. Then test your app to make sure everything works correctly. You may want to consult the compatibility notes to see what changes apply to each version you are adding support for: <a href="https://developer.android.com/reference/android/os/Build.VERSION_CODES.html">https://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a> as well as follow this guide:<br/>
+<a href="https://developer.android.com/distribute/best-practices/develop/target-sdk.html">https://developer.android.com/distribute/best-practices/develop/target-sdk.html</a><br/><div class="moreinfo">More info: <ul><li><a href="https://developer.android.com/distribute/best-practices/develop/target-sdk.html">https://developer.android.com/distribute/best-practices/develop/target-sdk.html</a>
+<li><a href="https://developer.android.com/reference/android/os/Build.VERSION_CODES.html">https://developer.android.com/reference/android/os/Build.VERSION_CODES.html</a>
+</ul></div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
+To suppress this error, use the issue id "OldTargetApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="chips">
+<span class="mdl-chip">
+    <span class="mdl-chip__text">OldTargetApi</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Correctness</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Warning</span>
+</span>
+<span class="mdl-chip">
+    <span class="mdl-chip__text">Priority 6/10</span>
+</span>
+</div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationOldTargetApiLink" onclick="reveal('explanationOldTargetApi');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="OldTargetApiCardLink" onclick="hideid('OldTargetApiCard');">
+Dismiss</button>            </div>
+            </div>
+          </section><a name="GradleDependency"></a>
 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="GradleDependencyCard" style="display: block;">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
   <div class="mdl-card__title">
@@ -308,7 +362,25 @@ Dismiss</button>            </div>
 <span class="lineno"> 52 </span>    // Test bağımlılıkları
 <span class="lineno"> 53 </span>    testImplementation("org.mockito:mockito-core:5.3.1")
 <span class="caretline"><span class="lineno"> 54 </span>    testImplementation("<span class="warning">org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 55 </span>}</pre>
+<span class="lineno"> 55 </span>
+<span class="lineno"> 56 </span>    // Retrofit ve JSON dönüştürme için
+<span class="lineno"> 57 </span>    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:65</span>: <span class="message">A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.6.2 is available: 2.8.7</span><br /><pre class="errorlines">
+<span class="lineno"> 62 </span>    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+<span class="lineno"> 63 </span>    
+<span class="lineno"> 64 </span>    // ViewModel ve LiveData
+<span class="caretline"><span class="lineno"> 65 </span>    implementation("<span class="warning">androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 66 </span>    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+<span class="lineno"> 67 </span>}</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:66</span>: <span class="message">A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.6.2 is available: 2.8.7</span><br /><pre class="errorlines">
+<span class="lineno"> 63 </span>    
+<span class="lineno"> 64 </span>    // ViewModel ve LiveData
+<span class="lineno"> 65 </span>    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+<span class="caretline"><span class="lineno"> 66 </span>    implementation("<span class="warning">androidx.lifecycle:lifecycle-livedata-ktx:2.6.2</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 67 </span>}</pre>
 
 </div>
 <div class="metadata"><div class="explanation" id="explanationGradleDependency" style="display: none;">
@@ -346,14 +418,14 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:23</span>: <span class="message">Expecting <code>android:screenOrientation="unspecified"</code> or <code>"fullSensor"</code> for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices</span><br /><pre class="errorlines">
-<span class="lineno"> 20 </span>        <span class="tag">&lt;activity</span><span class="attribute">
-</span><span class="lineno"> 21 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">".MainActivity"</span>
-<span class="lineno"> 22 </span>            <span class="prefix">android:</span><span class="attribute">exported</span>=<span class="value">"true"</span>
-<span class="caretline"><span class="lineno"> 23 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">screenOrientation</span>=<span class="value">"portrait"</span></span>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 24 </span>            <span class="tag">&lt;intent-filter></span>
-<span class="lineno"> 25 </span>                <span class="tag">&lt;action</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.intent.action.MAIN"</span> />
-<span class="lineno"> 26 </span>                <span class="tag">&lt;category</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.intent.category.LAUNCHER"</span> />
+<span class="location"><a href="../../src/main/AndroidManifest.xml">../../src/main/AndroidManifest.xml</a>:24</span>: <span class="message">Expecting <code>android:screenOrientation="unspecified"</code> or <code>"fullSensor"</code> for this activity so the user can use the application in any orientation and provide a great experience on Chrome OS devices</span><br /><pre class="errorlines">
+<span class="lineno"> 21 </span>        <span class="tag">&lt;activity</span><span class="attribute">
+</span><span class="lineno"> 22 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">".MainActivity"</span>
+<span class="lineno"> 23 </span>            <span class="prefix">android:</span><span class="attribute">exported</span>=<span class="value">"true"</span>
+<span class="caretline"><span class="lineno"> 24 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">screenOrientation</span>=<span class="value">"portrait"</span></span>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 25 </span>            <span class="tag">&lt;intent-filter></span>
+<span class="lineno"> 26 </span>                <span class="tag">&lt;action</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.intent.action.MAIN"</span> />
+<span class="lineno"> 27 </span>                <span class="tag">&lt;category</span><span class="attribute"> </span><span class="prefix">android:</span><span class="attribute">name</span>=<span class="value">"android.intent.category.LAUNCHER"</span> />
 </pre>
 
 </div>
@@ -525,24 +597,24 @@ Dismiss</button>            </div>
 <span class="lineno">  5 </span>    <span class="prefix">android:</span><span class="attribute">viewportWidth</span>=<span class="value">"24"</span>
 </pre>
 
-<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:19</span>: <span class="message">The resource <code>R.string.recording_stop_failed</code> appears to be unused</span><br /><pre class="errorlines">
-<span class="lineno"> 16 </span>    
-<span class="lineno"> 17 </span>    <span class="comment">&lt;!-- Toast Messages --></span>
-<span class="lineno"> 18 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"recording_start_failed"</span>>Kayıt başlatılamadı<span class="tag">&lt;/string></span>
-<span class="caretline"><span class="lineno"> 19 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"recording_stop_failed"</span></span>>Kayıt durdurulamadı<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 20 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"playback_start_failed"</span>>Oynatma başlatılamadı<span class="tag">&lt;/string></span>
-<span class="lineno"> 21 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"playback_stop_failed"</span>>Oynatma durdurulamadı<span class="tag">&lt;/string></span>
-<span class="lineno"> 22 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"permission_granted"</span>>İzin verildi<span class="tag">&lt;/string></span>
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:21</span>: <span class="message">The resource <code>R.string.recording_stop_failed</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno"> 18 </span>    
+<span class="lineno"> 19 </span>    <span class="comment">&lt;!-- Toast Messages --></span>
+<span class="lineno"> 20 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"recording_start_failed"</span>>Kayıt başlatılamadı<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno"> 21 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"recording_stop_failed"</span></span>>Kayıt durdurulamadı<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 22 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"playback_start_failed"</span>>Oynatma başlatılamadı<span class="tag">&lt;/string></span>
+<span class="lineno"> 23 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"playback_stop_failed"</span>>Oynatma durdurulamadı<span class="tag">&lt;/string></span>
+<span class="lineno"> 24 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"permission_granted"</span>>İzin verildi<span class="tag">&lt;/string></span>
 </pre>
 
-<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:21</span>: <span class="message">The resource <code>R.string.playback_stop_failed</code> appears to be unused</span><br /><pre class="errorlines">
-<span class="lineno"> 18 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"recording_start_failed"</span>>Kayıt başlatılamadı<span class="tag">&lt;/string></span>
-<span class="lineno"> 19 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"recording_stop_failed"</span>>Kayıt durdurulamadı<span class="tag">&lt;/string></span>
-<span class="lineno"> 20 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"playback_start_failed"</span>>Oynatma başlatılamadı<span class="tag">&lt;/string></span>
-<span class="caretline"><span class="lineno"> 21 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"playback_stop_failed"</span></span>>Oynatma durdurulamadı<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 22 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"permission_granted"</span>>İzin verildi<span class="tag">&lt;/string></span>
-<span class="lineno"> 23 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"permission_denied"</span>>İzin reddedildi<span class="tag">&lt;/string></span>
-<span class="lineno"> 24 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"settings_updated"</span>>Ayarlar güncellendi<span class="tag">&lt;/string></span>
+<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:23</span>: <span class="message">The resource <code>R.string.playback_stop_failed</code> appears to be unused</span><br /><pre class="errorlines">
+<span class="lineno"> 20 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"recording_start_failed"</span>>Kayıt başlatılamadı<span class="tag">&lt;/string></span>
+<span class="lineno"> 21 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"recording_stop_failed"</span>>Kayıt durdurulamadı<span class="tag">&lt;/string></span>
+<span class="lineno"> 22 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"playback_start_failed"</span>>Oynatma başlatılamadı<span class="tag">&lt;/string></span>
+<span class="caretline"><span class="lineno"> 23 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"playback_stop_failed"</span></span>>Oynatma durdurulamadı<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 24 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"permission_granted"</span>>İzin verildi<span class="tag">&lt;/string></span>
+<span class="lineno"> 25 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"permission_denied"</span>>İzin reddedildi<span class="tag">&lt;/string></span>
+<span class="lineno"> 26 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"settings_updated"</span>>Ayarlar güncellendi<span class="tag">&lt;/string></span>
 </pre>
 
 <span class="location"><a href="../../src/main/res/values/themes.xml">../../src/main/res/values/themes.xml</a>:36</span>: <span class="message">The resource <code>R.style.Widget_VoiceChat_Button_Recording</code> appears to be unused</span><br /><pre class="errorlines">
@@ -715,7 +787,7 @@ Dismiss</button>            </div>
 <span class="lineno"> 46 </span>    // Preferences kütüphanesi
 </pre>
 
-<button class="mdl-button mdl-js-button mdl-button--primary" id="UseTomlInsteadDivLink" onclick="reveal('UseTomlInsteadDiv');" />+ 5 More Occurrences...</button>
+<button class="mdl-button mdl-js-button mdl-button--primary" id="UseTomlInsteadDivLink" onclick="reveal('UseTomlInsteadDiv');" />+ 11 More Occurrences...</button>
 <div id="UseTomlInsteadDiv" style="display: none">
 <span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:44</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
 <span class="lineno"> 41 </span>    implementation("com.google.android.material:material:1.11.0")
@@ -753,14 +825,74 @@ Dismiss</button>            </div>
 <span class="lineno"> 52 </span>    // Test bağımlılıkları
 <span class="caretline"><span class="lineno"> 53 </span>    testImplementation("<span class="warning">org.mockito:mockito-core:5.3.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno"> 54 </span>    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
-<span class="lineno"> 55 </span>}</pre>
+<span class="lineno"> 55 </span>
+<span class="lineno"> 56 </span>    // Retrofit ve JSON dönüştürme için
+</pre>
 
 <span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:54</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
 <span class="lineno"> 51 </span>    
 <span class="lineno"> 52 </span>    // Test bağımlılıkları
 <span class="lineno"> 53 </span>    testImplementation("org.mockito:mockito-core:5.3.1")
 <span class="caretline"><span class="lineno"> 54 </span>    testImplementation("<span class="warning">org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 55 </span>}</pre>
+<span class="lineno"> 55 </span>
+<span class="lineno"> 56 </span>    // Retrofit ve JSON dönüştürme için
+<span class="lineno"> 57 </span>    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:57</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno"> 54 </span>    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
+<span class="lineno"> 55 </span>
+<span class="lineno"> 56 </span>    // Retrofit ve JSON dönüştürme için
+<span class="caretline"><span class="lineno"> 57 </span>    implementation("<span class="warning">com.squareup.retrofit2:retrofit:2.9.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 58 </span>    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+<span class="lineno"> 59 </span>    
+<span class="lineno"> 60 </span>    // Coroutines desteği
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:58</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno"> 55 </span>
+<span class="lineno"> 56 </span>    // Retrofit ve JSON dönüştürme için
+<span class="lineno"> 57 </span>    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+<span class="caretline"><span class="lineno"> 58 </span>    implementation("<span class="warning">com.squareup.retrofit2:converter-gson:2.9.0</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 59 </span>    
+<span class="lineno"> 60 </span>    // Coroutines desteği
+<span class="lineno"> 61 </span>    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:61</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno"> 58 </span>    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+<span class="lineno"> 59 </span>    
+<span class="lineno"> 60 </span>    // Coroutines desteği
+<span class="caretline"><span class="lineno"> 61 </span>    implementation("<span class="warning">org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 62 </span>    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+<span class="lineno"> 63 </span>    
+<span class="lineno"> 64 </span>    // ViewModel ve LiveData
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:62</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno"> 59 </span>    
+<span class="lineno"> 60 </span>    // Coroutines desteği
+<span class="lineno"> 61 </span>    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+<span class="caretline"><span class="lineno"> 62 </span>    implementation("<span class="warning">org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 63 </span>    
+<span class="lineno"> 64 </span>    // ViewModel ve LiveData
+<span class="lineno"> 65 </span>    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:65</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno"> 62 </span>    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+<span class="lineno"> 63 </span>    
+<span class="lineno"> 64 </span>    // ViewModel ve LiveData
+<span class="caretline"><span class="lineno"> 65 </span>    implementation("<span class="warning">androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 66 </span>    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+<span class="lineno"> 67 </span>}</pre>
+
+<span class="location"><a href="../../build.gradle.kts">../../build.gradle.kts</a>:66</span>: <span class="message">Use version catalog instead</span><br /><pre class="errorlines">
+<span class="lineno"> 63 </span>    
+<span class="lineno"> 64 </span>    // ViewModel ve LiveData
+<span class="lineno"> 65 </span>    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+<span class="caretline"><span class="lineno"> 66 </span>    implementation("<span class="warning">androidx.lifecycle:lifecycle-livedata-ktx:2.6.2</span>")&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 67 </span>}</pre>
 
 </div>
 </div>
@@ -791,40 +923,78 @@ Dismiss</button>            </div>
             </div>
           </section>
 <a name="Internationalization"></a>
-<a name="HardcodedText"></a>
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="HardcodedTextCard" style="display: block;">
+<a name="SetTextI18n"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="SetTextI18nCard" style="display: block;">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Hardcoded text</h2>
+    <h2 class="mdl-card__title-text">TextView Internationalization</h2>
   </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:55</span>: <span class="message">Hardcoded string "Stream Ba&#351;lat", should use <code>@string</code> resource</span><br /><pre class="errorlines">
-<span class="lineno"> 52 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/streamButton"</span>
-<span class="lineno"> 53 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
-<span class="lineno"> 54 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
-<span class="caretline"><span class="lineno"> 55 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Stream Başlat"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 56 </span>            <span class="prefix">android:</span><span class="attribute">enabled</span>=<span class="value">"false"</span>
-<span class="lineno"> 57 </span>            <span class="prefix">android:</span><span class="attribute">layout_marginTop</span>=<span class="value">"8dp"</span>
-<span class="lineno"> 58 </span>            <span class="prefix">app:</span><span class="attribute">layout_constraintTop_toBottomOf</span>=<span class="value">"@+id/playButton"</span>
+<span class="location"><a href="../../src/main/java/com/example/voicechat/MainActivity.kt">../../src/main/java/com/example/voicechat/MainActivity.kt</a>:290</span>: <span class="message">Do not concatenate text displayed with <code>setText</code>. Use resource string with placeholders.</span><br /><pre class="errorlines">
+<span class="lineno"> 287 </span>      <span class="keyword">val</span> ip = <span class="string">"192.168.1.100"</span> <span class="comment">// Örnek IP adresi</span>
+<span class="lineno"> 288 </span>      <span class="keyword">val</span> port = <span class="string">"8080"</span> <span class="comment">// Örnek port</span>
+<span class="lineno"> 289 </span>      <span class="keyword">val</span> startTime = SystemClock.elapsedRealtime()
+<span class="caretline"><span class="lineno"> 290 </span>      streamInfoText.text = <span class="warning"><span class="string">"IP: $ip\nPort: $port\nSüre: ${</span>SystemClock.elapsedRealtime() - startTime<span class="string">} ms"</span></span></span>
+<span class="lineno"> 291 </span>  }
+<span class="lineno"> 292 </span>
+<span class="lineno"> 293 </span>  private <span class="keyword">fun</span> stopStreaming() {
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/voicechat/MainActivity.kt">../../src/main/java/com/example/voicechat/MainActivity.kt</a>:290</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 287 </span>      <span class="keyword">val</span> ip = <span class="string">"192.168.1.100"</span> <span class="comment">// Örnek IP adresi</span>
+<span class="lineno"> 288 </span>      <span class="keyword">val</span> port = <span class="string">"8080"</span> <span class="comment">// Örnek port</span>
+<span class="lineno"> 289 </span>      <span class="keyword">val</span> startTime = SystemClock.elapsedRealtime()
+<span class="caretline"><span class="lineno"> 290 </span>      streamInfoText.text = <span class="string">"</span><span class="warning"><span class="string">IP: </span></span><span class="string">$ip\nPort: $port\nSüre: ${</span>SystemClock.elapsedRealtime() - startTime<span class="string">} ms"</span></span>
+<span class="lineno"> 291 </span>  }
+<span class="lineno"> 292 </span>
+<span class="lineno"> 293 </span>  private <span class="keyword">fun</span> stopStreaming() {
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/voicechat/MainActivity.kt">../../src/main/java/com/example/voicechat/MainActivity.kt</a>:290</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 287 </span>      <span class="keyword">val</span> ip = <span class="string">"192.168.1.100"</span> <span class="comment">// Örnek IP adresi</span>
+<span class="lineno"> 288 </span>      <span class="keyword">val</span> port = <span class="string">"8080"</span> <span class="comment">// Örnek port</span>
+<span class="lineno"> 289 </span>      <span class="keyword">val</span> startTime = SystemClock.elapsedRealtime()
+<span class="caretline"><span class="lineno"> 290 </span>      streamInfoText.text = <span class="string">"IP: $ip\n</span><span class="warning"><span class="string">Port: </span></span><span class="string">$port\nSüre: ${</span>SystemClock.elapsedRealtime() - startTime<span class="string">} ms"</span></span>
+<span class="lineno"> 291 </span>  }
+<span class="lineno"> 292 </span>
+<span class="lineno"> 293 </span>  private <span class="keyword">fun</span> stopStreaming() {
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/voicechat/MainActivity.kt">../../src/main/java/com/example/voicechat/MainActivity.kt</a>:290</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 287 </span>      <span class="keyword">val</span> ip = <span class="string">"192.168.1.100"</span> <span class="comment">// Örnek IP adresi</span>
+<span class="lineno"> 288 </span>      <span class="keyword">val</span> port = <span class="string">"8080"</span> <span class="comment">// Örnek port</span>
+<span class="lineno"> 289 </span>      <span class="keyword">val</span> startTime = SystemClock.elapsedRealtime()
+<span class="caretline"><span class="lineno"> 290 </span>      streamInfoText.text = <span class="string">"IP: $ip\nPort: $port\n</span><span class="warning"><span class="string">Süre: </span></span><span class="string">${</span>SystemClock.elapsedRealtime() - startTime<span class="string">} ms"</span></span>
+<span class="lineno"> 291 </span>  }
+<span class="lineno"> 292 </span>
+<span class="lineno"> 293 </span>  private <span class="keyword">fun</span> stopStreaming() {
+</pre>
+
+<span class="location"><a href="../../src/main/java/com/example/voicechat/MainActivity.kt">../../src/main/java/com/example/voicechat/MainActivity.kt</a>:290</span>: <span class="message">String literal in <code>setText</code> can not be translated. Use Android resources instead.</span><br /><pre class="errorlines">
+<span class="lineno"> 287 </span>      <span class="keyword">val</span> ip = <span class="string">"192.168.1.100"</span> <span class="comment">// Örnek IP adresi</span>
+<span class="lineno"> 288 </span>      <span class="keyword">val</span> port = <span class="string">"8080"</span> <span class="comment">// Örnek port</span>
+<span class="lineno"> 289 </span>      <span class="keyword">val</span> startTime = SystemClock.elapsedRealtime()
+<span class="caretline"><span class="lineno"> 290 </span>      streamInfoText.text = <span class="string">"IP: $ip\nPort: $port\nSüre: ${</span>SystemClock.elapsedRealtime() - startTime<span class="string">}</span><span class="warning"><span class="string"> ms</span></span><span class="string">"</span></span>
+<span class="lineno"> 291 </span>  }
+<span class="lineno"> 292 </span>
+<span class="lineno"> 293 </span>  private <span class="keyword">fun</span> stopStreaming() {
 </pre>
 
 </div>
-<div class="metadata"><div class="explanation" id="explanationHardcodedText" style="display: none;">
-Hardcoding text attributes directly in layout files is bad for several reasons:<br/>
-<br/>
-* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)<br/>
-<br/>
-* The application cannot be translated to other languages by just adding new translations for existing string resources.<br/>
-<br/>
-There are quickfixes to automatically extract this hardcoded string into a resource lookup.<br/>To suppress this error, use the issue id "HardcodedText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<div class="metadata"><div class="explanation" id="explanationSetTextI18n" style="display: none;">
+When calling <code>TextView#setText</code><br/>
+* Never call <code>Number#toString()</code> to format numbers; it will not handle fraction separators and locale-specific digits properly. Consider using <code>String#format</code> with proper format specifications (<code>%d</code> or <code>%f</code>) instead.<br/>
+* Do not pass a string literal (e.g. "Hello") to display text. Hardcoded text can not be properly translated to other languages. Consider using Android resource strings instead.<br/>
+* Do not build messages by concatenating text chunks. Such messages can not be properly translated.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/guide/topics/resources/localization.html">https://developer.android.com/guide/topics/resources/localization.html</a>
+</div>To suppress this error, use the issue id "SetTextI18n" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
 <br/></div>
 </div>
 </div>
 <div class="chips">
 <span class="mdl-chip">
-    <span class="mdl-chip__text">HardcodedText</span>
+    <span class="mdl-chip__text">SetTextI18n</span>
 </span>
 <span class="mdl-chip">
     <span class="mdl-chip__text">Internationalization</span>
@@ -833,13 +1003,13 @@ There are quickfixes to automatically extract this hardcoded string into a resou
     <span class="mdl-chip__text">Warning</span>
 </span>
 <span class="mdl-chip">
-    <span class="mdl-chip__text">Priority 5/10</span>
+    <span class="mdl-chip__text">Priority 6/10</span>
 </span>
 </div>
               </div>
               <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationHardcodedTextLink" onclick="reveal('explanationHardcodedText');">
-Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="HardcodedTextCardLink" onclick="hideid('HardcodedTextCard');">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationSetTextI18nLink" onclick="reveal('explanationSetTextI18n');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="SetTextI18nCardLink" onclick="hideid('SetTextI18nCard');">
 Dismiss</button>            </div>
             </div>
           </section>

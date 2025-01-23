@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\haQan\.gradle\caches\8.12\transforms\135a7b5b46a62ab4a01efc9f672f7749\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\7659ccc203d97fa1a44f620d71819f20\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\haQan\.gradle\caches\8.12\transforms\a9cfdb64b0a1ebeac1b802c93ca3fdc8\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
@@ -15,35 +15,36 @@ MERGED from [androidx.fragment:fragment-ktx:1.3.6] C:\Users\haQan\.gradle\caches
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\haQan\.gradle\caches\8.12\transforms\754e6c42995d109d4c0840a8176fd049\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\haQan\.gradle\caches\8.12\transforms\7fb7d2031c725f38af0230be8f55ddd3\transformed\jetified-activity-ktx-1.8.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity:1.8.0] C:\Users\haQan\.gradle\caches\8.12\transforms\7488a97a70d81ecba1babcc0f54dfbab\transformed\jetified-activity-1.8.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f3cc21a818080cdcc4b8f778d086f5ed\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.media:media:1.7.0] C:\Users\haQan\.gradle\caches\8.12\transforms\4177bf21e735c1345774129e5dadb583\transformed\media-1.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\bb99915a8f030f908e3778148ea7bcf3\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f4be17ebdd9b9eea12ab233aacf08e3a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\ea6981dcf9b6a2cd7084ef8d5c5de80e\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\0aaaf40e0ac2e50f27c742a093b8a3f8\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\218c9f097504dcc6960477c15a280d40\transformed\jetified-lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\4c296ba6a1e87473f9b5fbe3db67971a\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\63a1bc777a5c3f2974ced17009cb1867\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\3b89f97665cbae37b85434b730c65ce2\transformed\jetified-lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\2ef1c1c64509dfb8dd839b7a0db71bb8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\bab9f1bee30299a3104345eac01283cb\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\35240630870a2b109d1f28e6734f0bec\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\c49733ce0f324c3e49da1df31acb441e\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\0308aef8c1e33c3d158ca0b27dfeed2a\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f3cc21a818080cdcc4b8f778d086f5ed\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.media:media:1.7.0] C:\Users\haQan\.gradle\caches\8.12\transforms\4177bf21e735c1345774129e5dadb583\transformed\media-1.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\haQan\.gradle\caches\8.12\transforms\d544abcd99c3e9e5ebf18cd984bf47df\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\c98d643c4aea5dfe36a66f839fd8a8db\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\2ef1c1c64509dfb8dd839b7a0db71bb8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\1ba8046e3745eb27594801c681aab4ed\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\3cb71d2776a07b35c5e9db09cad545a4\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\3afdccb794e0595fd822cd79b171095e\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\bab9f1bee30299a3104345eac01283cb\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\35240630870a2b109d1f28e6734f0bec\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\77eabf3e5bfbc54930b1ecffeb9b6565\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\70059e0f79165e31bb8fb6b2784080a1\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\ca95d2e081b711b08a5e24852aeac61e\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.4.1] C:\Users\haQan\.gradle\caches\8.12\transforms\295cfcd49663081385d6abe454ac81e9\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.window:window:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\422fc649c17262e646e7b82e7e19e409\transformed\jetified-window-1.0.0\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.core:core:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\ea34bca34b3cf39a1d8337462c3bd26d\transformed\core-1.12.0\AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\ea6981dcf9b6a2cd7084ef8d5c5de80e\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\0aaaf40e0ac2e50f27c742a093b8a3f8\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\2791fae0e2f4aca66bed817d1ba1f3ce\transformed\jetified-lifecycle-runtime-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\6e06913297e82921f2a45e630300a25e\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\dfbab786e449624248a5325209386084\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\152f6c1747a5e37edfa37d3c7f624e06\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\cabe16397720a42fdcb844011473c567\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\8456bc04c06bfa4c0cf23e5789fe489e\transformed\lifecycle-livedata-2.6.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\3f51372162b4d4e1af09918735a3e19c\transformed\lifecycle-viewmodel-2.6.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\0f198a1f15bc5743157997845a16a81a\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\8176f98215607b030d91881d973df651\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\55da2cba8ca1084ed0326fed87b0011d\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\38ed19d2b452071159255ecc9fcb0b72\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\fcaeb4e2835a94727295c5d8a1dbfb69\transformed\jetified-lifecycle-livedata-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\a68eb8652f4bec76c520af34f1e5537c\transformed\jetified-lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\haQan\.gradle\caches\8.12\transforms\20ef5334781f28fcf3c36924c2c0e5ba\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f8285a41c19f50493b5f1202511158a1\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\4d41db4d4f03ad4469086aefddd011a2\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -57,40 +58,44 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\haQan\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\cadfb9c24ff8ca8ba1a6b6d037358c42\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\72d422ebbfd4a605295bf6ccaab93f8a\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:5:5-71
+ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:5:5-71
 	android:name
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:5:22-68
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:5:22-68
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:6:5-7:37
+ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:6:5-7:37
 	android:maxSdkVersion
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:7:9-35
 	android:name
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:6:22-78
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:6:22-78
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:8:22-64
 application
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:9:5-30:19
-INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:9:5-30:19
+ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:10:5-31:19
+INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:10:5-31:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\haQan\.gradle\caches\8.12\transforms\135a7b5b46a62ab4a01efc9f672f7749\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\haQan\.gradle\caches\8.12\transforms\135a7b5b46a62ab4a01efc9f672f7749\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\haQan\.gradle\caches\8.12\transforms\a9cfdb64b0a1ebeac1b802c93ca3fdc8\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\haQan\.gradle\caches\8.12\transforms\a9cfdb64b0a1ebeac1b802c93ca3fdc8\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f4be17ebdd9b9eea12ab233aacf08e3a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f4be17ebdd9b9eea12ab233aacf08e3a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\63a1bc777a5c3f2974ced17009cb1867\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\63a1bc777a5c3f2974ced17009cb1867\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\422fc649c17262e646e7b82e7e19e409\transformed\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\422fc649c17262e646e7b82e7e19e409\transformed\jetified-window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\ea34bca34b3cf39a1d8337462c3bd26d\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\ea34bca34b3cf39a1d8337462c3bd26d\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\dfbab786e449624248a5325209386084\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\dfbab786e449624248a5325209386084\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\haQan\.gradle\caches\8.12\transforms\4419dd447ca95c8a37f25d21dc50d45d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\haQan\.gradle\caches\8.12\transforms\4419dd447ca95c8a37f25d21dc50d45d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\haQan\.gradle\caches\8.12\transforms\87b3ea6a86be55baf0cce2fb5ae922f4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
@@ -98,49 +103,49 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\haQan\.g
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\haQan\.gradle\caches\8.12\transforms\119cdf79aa92869aa6f4ab403fbcdaad\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\haQan\.gradle\caches\8.12\transforms\119cdf79aa92869aa6f4ab403fbcdaad\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\ea34bca34b3cf39a1d8337462c3bd26d\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:15:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:13:9-54
 	android:roundIcon
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:16:9-54
 	tools:targetApi
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:18:9-29
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:19:9-29
 	android:icon
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:17:9-47
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:18:9-47
 	android:dataExtractionRules
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:11:9-65
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:12:9-65
 activity#com.example.voicechat.MainActivity
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:20:9-28:20
+ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:21:9-29:20
 	android:screenOrientation
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:23:13-49
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:24:13-49
 	android:exported
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:21:13-41
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:22:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:24:13-27:29
+ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:25:13-28:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml:27:27-74
 uses-sdk
-INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\haQan\.gradle\caches\8.12\transforms\135a7b5b46a62ab4a01efc9f672f7749\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\haQan\.gradle\caches\8.12\transforms\135a7b5b46a62ab4a01efc9f672f7749\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\7659ccc203d97fa1a44f620d71819f20\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
@@ -163,30 +168,46 @@ MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\haQan\.gradle\caches
 MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\haQan\.gradle\caches\8.12\transforms\7fb7d2031c725f38af0230be8f55ddd3\transformed\jetified-activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity:1.8.0] C:\Users\haQan\.gradle\caches\8.12\transforms\7488a97a70d81ecba1babcc0f54dfbab\transformed\jetified-activity-1.8.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.8.0] C:\Users\haQan\.gradle\caches\8.12\transforms\7488a97a70d81ecba1babcc0f54dfbab\transformed\jetified-activity-1.8.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f3cc21a818080cdcc4b8f778d086f5ed\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f3cc21a818080cdcc4b8f778d086f5ed\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.media:media:1.7.0] C:\Users\haQan\.gradle\caches\8.12\transforms\4177bf21e735c1345774129e5dadb583\transformed\media-1.7.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.media:media:1.7.0] C:\Users\haQan\.gradle\caches\8.12\transforms\4177bf21e735c1345774129e5dadb583\transformed\media-1.7.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\bb99915a8f030f908e3778148ea7bcf3\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\bb99915a8f030f908e3778148ea7bcf3\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f4be17ebdd9b9eea12ab233aacf08e3a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f4be17ebdd9b9eea12ab233aacf08e3a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\ea6981dcf9b6a2cd7084ef8d5c5de80e\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\ea6981dcf9b6a2cd7084ef8d5c5de80e\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\0aaaf40e0ac2e50f27c742a093b8a3f8\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\0aaaf40e0ac2e50f27c742a093b8a3f8\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\218c9f097504dcc6960477c15a280d40\transformed\jetified-lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\218c9f097504dcc6960477c15a280d40\transformed\jetified-lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\4c296ba6a1e87473f9b5fbe3db67971a\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\4c296ba6a1e87473f9b5fbe3db67971a\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\63a1bc777a5c3f2974ced17009cb1867\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\63a1bc777a5c3f2974ced17009cb1867\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\3b89f97665cbae37b85434b730c65ce2\transformed\jetified-lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\3b89f97665cbae37b85434b730c65ce2\transformed\jetified-lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\2ef1c1c64509dfb8dd839b7a0db71bb8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\2ef1c1c64509dfb8dd839b7a0db71bb8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\bab9f1bee30299a3104345eac01283cb\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\bab9f1bee30299a3104345eac01283cb\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\35240630870a2b109d1f28e6734f0bec\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\35240630870a2b109d1f28e6734f0bec\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\c49733ce0f324c3e49da1df31acb441e\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\c49733ce0f324c3e49da1df31acb441e\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\0308aef8c1e33c3d158ca0b27dfeed2a\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\0308aef8c1e33c3d158ca0b27dfeed2a\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f3cc21a818080cdcc4b8f778d086f5ed\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f3cc21a818080cdcc4b8f778d086f5ed\transformed\jetified-core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.media:media:1.7.0] C:\Users\haQan\.gradle\caches\8.12\transforms\4177bf21e735c1345774129e5dadb583\transformed\media-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.media:media:1.7.0] C:\Users\haQan\.gradle\caches\8.12\transforms\4177bf21e735c1345774129e5dadb583\transformed\media-1.7.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\haQan\.gradle\caches\8.12\transforms\d544abcd99c3e9e5ebf18cd984bf47df\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\haQan\.gradle\caches\8.12\transforms\d544abcd99c3e9e5ebf18cd984bf47df\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\c98d643c4aea5dfe36a66f839fd8a8db\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\c98d643c4aea5dfe36a66f839fd8a8db\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\2ef1c1c64509dfb8dd839b7a0db71bb8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\2ef1c1c64509dfb8dd839b7a0db71bb8\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\1ba8046e3745eb27594801c681aab4ed\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\1ba8046e3745eb27594801c681aab4ed\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\3cb71d2776a07b35c5e9db09cad545a4\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\3cb71d2776a07b35c5e9db09cad545a4\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\3afdccb794e0595fd822cd79b171095e\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\3afdccb794e0595fd822cd79b171095e\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\bab9f1bee30299a3104345eac01283cb\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\bab9f1bee30299a3104345eac01283cb\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\35240630870a2b109d1f28e6734f0bec\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\35240630870a2b109d1f28e6734f0bec\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\77eabf3e5bfbc54930b1ecffeb9b6565\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\haQan\.gradle\caches\8.12\transforms\77eabf3e5bfbc54930b1ecffeb9b6565\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\70059e0f79165e31bb8fb6b2784080a1\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
@@ -199,28 +220,14 @@ MERGED from [androidx.window:window:1.0.0] C:\Users\haQan\.gradle\caches\8.12\tr
 MERGED from [androidx.window:window:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\422fc649c17262e646e7b82e7e19e409\transformed\jetified-window-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\ea34bca34b3cf39a1d8337462c3bd26d\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\ea34bca34b3cf39a1d8337462c3bd26d\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\ea6981dcf9b6a2cd7084ef8d5c5de80e\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\ea6981dcf9b6a2cd7084ef8d5c5de80e\transformed\jetified-savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\0aaaf40e0ac2e50f27c742a093b8a3f8\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\haQan\.gradle\caches\8.12\transforms\0aaaf40e0ac2e50f27c742a093b8a3f8\transformed\jetified-savedstate-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\2791fae0e2f4aca66bed817d1ba1f3ce\transformed\jetified-lifecycle-runtime-ktx-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\2791fae0e2f4aca66bed817d1ba1f3ce\transformed\jetified-lifecycle-runtime-ktx-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\6e06913297e82921f2a45e630300a25e\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\6e06913297e82921f2a45e630300a25e\transformed\jetified-lifecycle-viewmodel-ktx-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\dfbab786e449624248a5325209386084\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\dfbab786e449624248a5325209386084\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\152f6c1747a5e37edfa37d3c7f624e06\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\152f6c1747a5e37edfa37d3c7f624e06\transformed\jetified-lifecycle-livedata-core-ktx-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\cabe16397720a42fdcb844011473c567\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\cabe16397720a42fdcb844011473c567\transformed\lifecycle-livedata-core-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\8456bc04c06bfa4c0cf23e5789fe489e\transformed\lifecycle-livedata-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\8456bc04c06bfa4c0cf23e5789fe489e\transformed\lifecycle-livedata-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\3f51372162b4d4e1af09918735a3e19c\transformed\lifecycle-viewmodel-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\3f51372162b4d4e1af09918735a3e19c\transformed\lifecycle-viewmodel-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\0f198a1f15bc5743157997845a16a81a\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\0f198a1f15bc5743157997845a16a81a\transformed\lifecycle-runtime-2.6.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\8176f98215607b030d91881d973df651\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\8176f98215607b030d91881d973df651\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\55da2cba8ca1084ed0326fed87b0011d\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\55da2cba8ca1084ed0326fed87b0011d\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\38ed19d2b452071159255ecc9fcb0b72\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\38ed19d2b452071159255ecc9fcb0b72\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\fcaeb4e2835a94727295c5d8a1dbfb69\transformed\jetified-lifecycle-livedata-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\fcaeb4e2835a94727295c5d8a1dbfb69\transformed\jetified-lifecycle-livedata-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\a68eb8652f4bec76c520af34f1e5537c\transformed\jetified-lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\a68eb8652f4bec76c520af34f1e5537c\transformed\jetified-lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\haQan\.gradle\caches\8.12\transforms\20ef5334781f28fcf3c36924c2c0e5ba\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\haQan\.gradle\caches\8.12\transforms\20ef5334781f28fcf3c36924c2c0e5ba\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f8285a41c19f50493b5f1202511158a1\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -246,13 +253,13 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\72d422ebbfd4a605295bf6ccaab93f8a\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\72d422ebbfd4a605295bf6ccaab93f8a\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\haQan\Documents\VoiceChat\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\haQan\Documents\VoiceChat\VoiceChat\app\src\main\AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f4be17ebdd9b9eea12ab233aacf08e3a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\dfbab786e449624248a5325209386084\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\dfbab786e449624248a5325209386084\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\63a1bc777a5c3f2974ced17009cb1867\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\63a1bc777a5c3f2974ced17009cb1867\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\haQan\.gradle\caches\8.12\transforms\87b3ea6a86be55baf0cce2fb5ae922f4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\haQan\.gradle\caches\8.12\transforms\87b3ea6a86be55baf0cce2fb5ae922f4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\haQan\.gradle\caches\8.12\transforms\119cdf79aa92869aa6f4ab403fbcdaad\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
@@ -271,6 +278,12 @@ ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\haQan\.gradle\caches\8.12\tra
 		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f4be17ebdd9b9eea12ab233aacf08e3a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\haQan\.gradle\caches\8.12\transforms\f4be17ebdd9b9eea12ab233aacf08e3a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\63a1bc777a5c3f2974ced17009cb1867\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\63a1bc777a5c3f2974ced17009cb1867\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\haQan\.gradle\caches\8.12\transforms\63a1bc777a5c3f2974ced17009cb1867\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0] C:\Users\haQan\.gradle\caches\8.12\transforms\422fc649c17262e646e7b82e7e19e409\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
 	android:required
@@ -303,12 +316,6 @@ uses-permission#com.example.voicechat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\ea34bca34b3cf39a1d8337462c3bd26d\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] C:\Users\haQan\.gradle\caches\8.12\transforms\ea34bca34b3cf39a1d8337462c3bd26d\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
-meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\dfbab786e449624248a5325209386084\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\dfbab786e449624248a5325209386084\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\haQan\.gradle\caches\8.12\transforms\dfbab786e449624248a5325209386084\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\haQan\.gradle\caches\8.12\transforms\87b3ea6a86be55baf0cce2fb5ae922f4\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
 	android:value

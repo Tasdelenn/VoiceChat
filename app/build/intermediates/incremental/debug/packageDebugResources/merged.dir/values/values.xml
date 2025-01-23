@@ -80,8 +80,10 @@
     <string name="settings_updated">Ayarlar güncellendi</string>
     <string name="start_playing">Oynat</string>
     <string name="start_recording">Kayıt Başlat</string>
+    <string name="start_stream">Stream Başlat</string>
     <string name="stop_playing">Durdur</string>
     <string name="stop_recording">Kaydı Durdur</string>
+    <string name="stop_stream">Stream Durdur</string>
     <string name="summary_auto_gain">Ses seviyesini otomatik ayarlar</string>
     <string name="summary_bit_depth">Ses bit derinliğini seçin</string>
     <string name="summary_echo_cancellation">Hoparlör-mikrofon arasındaki eko etkisini azaltır</string>
